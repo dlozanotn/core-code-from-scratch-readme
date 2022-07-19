@@ -11,3 +11,5 @@ interpreted languages are those that can be understood both by us and the comput
 compiled languages: C, C++, 
 
 interpreted languages: PHP, Javascript
+
+Hybrid: Java, Python
