@@ -15,6 +15,7 @@ interpreted languages: PHP, Javascript
 Hybrid: Java, Python
 
 
+
 Is Java compiled or interpreted, or both?,
 
 Both, because  a java program is first compiled into bytecode which JRE can understand. ByteCode is then interpreted by the JVM making it as interpreted language.
