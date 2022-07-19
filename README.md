@@ -20,3 +20,25 @@ Is Java compiled or interpreted, or both?,
 
 Both, because  a java program is first compiled into bytecode which JRE can understand. ByteCode is then interpreted by the JVM making it as interpreted language.
 
+
+Pseudocode
+
+
+  Starting point: START
+  Input: READ, GET
+  Output: PRINT
+  Math: +, -, *, /
+  Assignation: <--
+  Initialize: SET, INIT
+  Add one: INCREMENT
+  End point: END
+  
+  
+  Solution
+  
+  1. START
+  2. Amount of dollar <-- GET
+  3. BTCprice <-- GET FROM[(https://www.coinbase.com/es-LA/converter/btc/usd)]
+  4. total dollar <-- Amount * BTCprice
+  5. PRINT Total dollar (result of convert bitcoin to dollar)
+  9. END
