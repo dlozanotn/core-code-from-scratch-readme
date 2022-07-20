@@ -25,19 +25,18 @@ Hybrid: Java, Python
 Both, because  a java program is first compiled into bytecode which JRE can understand. ByteCode is then interpreted by the JVM making it as interpreted language.
 
 
-## Pseudocode
+## Pseudocode 
 
 
-
-
-  Starting point: START
-  Input: READ, GET
-  Output: PRINT
-  Math: +, -, *, /
-  Assignation: <--
-  Initialize: SET, INIT
-  Add one: INCREMENT
-  End point: END
+ 
+ 1.Starting point: START
+  2.Input: READ, GET
+  3.Output: PRINT
+  4.Math: +, -, *, /
+  5.Assignation: <--
+  6.Initialize:  SET, INIT
+  7.Add one: INCREMENT
+  8.End point: END
   
   
   Solution
@@ -45,13 +44,13 @@ Both, because  a java program is first compiled into bytecode which JRE can unde
   1. START
   2. Amount of dollar <-- GET
   3. BTCprice <-- GET FROM[(https://www.coinbase.com/es-LA/converter/btc/usd)]
-  4. total dollar <-- Amount * BTCprice
+  4. total dollar <-- Amount of dollar * BTCprice
   5. PRINT Total dollar (result of convert bitcoin to dollar)
-  9. END
+  6. END
 
 
 
-## Mission Statement
+## Core Challenges Mission Statement 
 
 
 I'm David Lozano, I'm a web designer, I've worked with wordpress, figma, html and css, in agencies in USA; but what I want to learn is to program, to be a frontend, or full stack, and I want to work in companies where I can develop and in the future, create my own web applications.
