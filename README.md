@@ -48,3 +48,12 @@ Both, because  a java program is first compiled into bytecode which JRE can unde
   4. total dollar <-- Amount * BTCprice
   5. PRINT Total dollar (result of convert bitcoin to dollar)
   9. END
+
+
+
+## Mission Statement
+
+
+I'm David Lozano, I'm a web designer, I've worked with wordpress, figma, html and css, in agencies in USA; but what I want to learn is to program, to be a frontend, or full stack, and I want to work in companies where I can develop and in the future, create my own web applications.
+
+I am a curious, resilient, self-taught and self-directed person, and I believe that you can always learn something new every day.💻 
