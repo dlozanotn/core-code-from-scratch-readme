@@ -1,10 +1,15 @@
 
 
+
+<HTML>
+<h1 style='color: #7C278D;'>DAVID LOZANO</h1>
+</HTML>
+
 # core-code-from-scratch-readme
 Works of the course
 
 
-![David Lozano](https://nuyidlmarketing.site/wp-content/uploads/2022/04/header-nueva-paginasin-fondo.png)
+![David Lozano](images/header-nueva-paginasin-fondo.png)
 
 
 ## Interpreted And Compiled Programming Languages
@@ -27,8 +32,6 @@ Both, because  a java program is first compiled into bytecode which JRE can unde
 
 ## Pseudocode 
 
-
- 
  1.Starting point: START
   2.Input: READ, GET
   3.Output: PRINT
@@ -39,7 +42,7 @@ Both, because  a java program is first compiled into bytecode which JRE can unde
   8.End point: END
   
   
-  Solution
+**SOLUTION**
   
   1. START
   2. Amount of dollar <-- GET
@@ -56,4 +59,5 @@ Both, because  a java program is first compiled into bytecode which JRE can unde
 I'm David Lozano, I'm a web designer, I've worked with wordpress, figma, html and css, in agencies in USA; but what I want to learn is to program, to be a frontend, or full stack, and I want to work in companies where I can develop and in the future, create my own web applications.
 
 I am a curious, resilient, self-taught and self-directed person, and I believe that you can always learn something new every day.💻 
+
 
