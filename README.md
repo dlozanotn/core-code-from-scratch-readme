@@ -4,6 +4,9 @@
 Works of the course
 
 
+![David Lozano](https://nuyidlmarketing.site/wp-content/uploads/2022/04/header-nueva-paginasin-fondo.png)
+
+
 ## Interpreted And Compiled Programming Languages
 
 compiled languages are those that communicate directly with the cpu, and need to be compiled so that they can be interpreted to binary code and communicate directly with the computer.
