@@ -28,6 +28,8 @@ Both, because  a java program is first compiled into bytecode which JRE can unde
 ## Pseudocode
 
 
+
+
   Starting point: START
   Input: READ, GET
   Output: PRINT
