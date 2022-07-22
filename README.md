@@ -169,6 +169,69 @@ Third 1985
               syscall
 
 ```
+<br>
+
+# Print special numbers
+
+## Description
+
+In this exercise you must use an iterative flow control to be able to print all the even numbers in the range of numbers from 0 to 100. Remember that you should not print each number, you should use a flow control structure to perform the exercise.
+
+Help
+
+0.For <br>
+1.While <br>
+2.do While <br>
+3.Even number<br>
+4.Reminder Operator
+
+<br>
+
+## FOR
+<br>
+
+```javascript
+
+let str = '';
+for (let i = 0; i <= 100; i=i+2) {
+    str = str + i;
+}
+console.log(str);
+
+```
+## WHILE
+<br>
+
+```javascript
+
+var x = 0;
+while (x <= 100){
+    console.log(x);
+    x += 2;
+}
+
+
+
+```
+
+## DO WHILE
+<br>
+
+```javascript
+
+let result = '';
+let i = 0;
+
+do {
+  i = i + 2;
+  result = result + i;
+} while (i < 100);
+
+console.log(result);
+
+
+
+```
 
 
 
