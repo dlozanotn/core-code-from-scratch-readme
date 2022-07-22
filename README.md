@@ -70,7 +70,7 @@ I am a curious, resilient, self-taught and self-directed person, and I believe t
 
 
 
-# Wednesday 19 of July of 2022
+# Wednesday 20 of July of 2022
 <br>
 
 ## 1.Your date of birth in the matrix? exercise
@@ -169,6 +169,10 @@ Third 1985
               syscall
 
 ```
+<br>
+
+
+# Thursday 21 of July of 2022
 <br>
 
 # Print special numbers
