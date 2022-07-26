@@ -43,24 +43,24 @@ Learn about the basics of programming and start knowing Javascript.
 
 | Preguntas    🧐       | Respuestas  🤭                                                             |
 | ----------------- | ------------------------------------------------------------------ |
-| What does programming look like? | Programar es una actividad que nos hace sentir vivos, y demuestra que somos seres inteligentes. Programar, no es una actividad mecánica. |
-| What really is programming? | La programación es el proceso de crear un conjunto de instrucciones que le  dicen a una computadora como realizar algún tipo de tarea. |
-| What is a program? | Un programa informático o programa de computadora es una secuencia de instrucciones, escritas para realizar una tarea específica en un computador.​  |
-| How a computer run a program? |  Instrucción por instrucción hasta que termina. |
-| Algorithmic operations | Los operadores son símbolos que representan una acción a realizar con los números o elementos que se encuentran antes o después. |
-| Sequential | También conocido como estructura secuencial, es aquella en la que una instrucción o acción sigue a otra en secuencia|
-| Conditional | Un condicional, como su nombre lo indica, es una condición para discernir entre una opción u otra, y en el proceso mental normalmente se manifiesta con un “Si”; por ejemplo: Si (va a llover), coge el paraguas. |
-| Iterative |  Las operaciones o instrucciones son las mismas pero los datos que se procesan pueden cambiar en la ejecución del ciclo. |
-| Basic elements of programming | Lenguaje común, Diagramas de flujo, Pseudocódigo, Lenguajes de programación |
-| Instruction set | Un programa no es más que un conjunto de sentencias que se ejecutan para realizar una cierta tarea. |
-| Variables | En programación, una variable está formada por un espacio en el sistema de almacenaje (memoria principal de un ordenador) y un nombre simbólico (un identificador) que está asociado a dicho espacio. |
-| Output | En informática el output corresponde a los datos que proporciona un computador después de procesar la información que ha recibido.|
-| Wat is javascript? | JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. |
-| What is an interpreted language? |Se define como orientado a objetos, ​ basado en prototipos, imperativo, débilmente tipado y dinámico. |
-| HTMl basics | El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos. |
+| What does programming look like? | Programming is an activity that makes us feel alive, and shows that we are intelligent beings. Programming is not a mechanical activity. |
+| What really is programming? | Programming is the process of creating a set of instructions that tell a computer how to perform some kind of task. |
+| What is a program? | A computer program or computer program is a sequence of instructions, written to perform a specific task on a computer.  |
+| How a computer run a program? |  Instruction by instruction until it ends. |
+| Algorithmic operations | Operators are symbols that represent an action to be performed with the numbers or elements before or after them. |
+| Sequential | Also known as sequential structure, it is one in which one instruction or action follows another in sequence.|
+| Conditional | A conditional, as its name indicates, is a condition to discern between one option or another, and in the mental process it is normally manifested with an "If"; for example: If (it is going to rain), take the umbrella. |
+| Iterative |  The operations or instructions are the same but the data being processed may change during the execution of the cycle. |
+| Basic elements of programming | Common language, Flowcharts, Pseudocode, Programming languages, Programming languages. |
+| Instruction set | a program is nothing more than a set of statements that are executed to perform a certain task. |
+| Variables | In programming, a variable consists of a space in the storage system (main memory of a computer) and a symbolic name (an identifier) that is associated with that space. |
+| Output | In computing, the output corresponds to the data provided by a computer after processing the information it has received.|
+| Wat is javascript? | JavaScript is an interpreted programming language, a dialect of the ECMAScript standard. |
+| What is an interpreted language? |is defined as object-oriented, prototype-based, imperative, weakly typed and dynamic.|
+| HTMl basics | Hypertext Markup Language (HTML) is the code used to structure and display a web page and its contents. |
 | Javascript Hello World | Console.log('Hello World...') |
 | Variables in Javascript | Var, Const, let> |
-| Basic HTML structure | La estructura básica de una página web se compone por las etiquetas <html>, <head> y <body>. |
+| Basic HTML structure | The basic structure of a web page consists of <html>, <head> and <body> tags. |
 
 ## Pseudocode 
 <br>
@@ -309,7 +309,8 @@ if (n == 100) {
 
 # IF..ELSE
 
-The if statement executes a statement if a specified condition is truthy. If the condition is falsy, another statement in the optional else clause will be executed.
+The if statement executes a statement if a specified condition is [truthy
+](https://developer.mozilla.org/en-US/docs/Glossary/Truthy). If the condition is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy), another statement in the optional else clause will be executed.
 
 ```javascript
 
@@ -332,7 +333,7 @@ console.log(testNum(-5));
 
 # FOR
 
-The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.
+The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a [block statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block)) to be executed in the loop.
 
 ```javascript
 
@@ -368,7 +369,7 @@ console.log(n);
 
 The function declaration (function statement) defines a function with the specified parameters.
 
-You can also define functions using the Function constructor and a function expression.
+You can also define functions using the [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) constructor and a [function expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function).
 
 ```javascript
 
