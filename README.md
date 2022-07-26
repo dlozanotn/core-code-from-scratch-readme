@@ -273,5 +273,90 @@ if (n == 100) {
 }
 
 ```
+<br>
+<br>
+
+
+# Monday 25 of July of 2022
+<br>
+
+# IF..ELSE
+
+The if statement executes a statement if a specified condition is truthy. If the condition is falsy, another statement in the optional else clause will be executed.
+
+```javascript
+
+const  n = 100;
+
+function testNum(a) {
+  let result;
+  if (a > -6) {
+    result = 'positive';
+  } else {
+    result = 'NOT positive';
+  }
+  return result;
+}
+
+console.log(testNum(-5));
+// expected output: "NOT positive"
+
+```
+
+# FOR
+
+The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.
+
+```javascript
+
+let str = '';
+
+for (let i = 0; i < 9; i++) {
+  str = str + i;
+}
+
+console.log(str);
+// expected output: "012345678"
+
+```
+
+# WHILE
+
+The while statement creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated before executing the statement.
+
+```javascript
+
+let n = 0;
+
+while (n < 3) {
+  n++;
+}
+
+console.log(n);
+// expected output: 3
+
+```
+
+# FUNCTION DECLARATION
+
+The function declaration (function statement) defines a function with the specified parameters.
+
+You can also define functions using the Function constructor and a function expression.
+
+```javascript
+
+function calcRectArea(width, height) {
+  return width * height;
+}
+
+console.log(calcRectArea(5, 6));
+// expected output: 30
+
+```
+
+
+
+
+
 
 </HTML>
