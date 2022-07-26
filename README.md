@@ -237,7 +237,41 @@ console.log(result);
 
 ```
 
+# Bad code
+## Description
+<br>
+The code shown below is not working in the right way, as a task you must find the error made by the developer who programmed this code and correct it, for this exercise you must explain what the error is and place the correct code
+
+```javascript
+
+var cond = false;
+
+if ((cond === true)) {
+  console.log('The cond variable is true');
+} else {
+  console.log('The cond variable is false');
+}
+
+```
 
 
+# Bad code2
+## Description
+<br>
+The code shown below is not working in the right way, as a task you must find the error made by the developer who programmed this code and correct it, for this exercise you must explain what the error is and place the correct code
+
+```javascript
+
+const  n = 100;
+
+if (n == 100) {
+  console.log("¡Este es un número especial!");
+} else if (n < 1000 || n % 10 == 0) {
+ console.log('Este número es casi especial');
+} else {
+  console.log('Sólo un número normal');
+}
+
+```
 
 </HTML>
