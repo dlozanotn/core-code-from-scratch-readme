@@ -382,7 +382,74 @@ console.log(calcRectArea(5, 6));
 
 ```
 
+# Tuesday 26 of July of 2022
+<br>
 
+# Excersices CodeWars
+
+Multiply exercise
+
+```javascript
+
+function multiply(a, b){
+  return (a * b)
+  console.log(multiply)
+}
+
+
+```
+
+
+ASCII Total exercise
+
+```javascript
+
+function uniTotal(str) {
+  let total = 0;
+  for (let i = 0, length = str.length; i < length; i++) {
+    total += str[i].charCodeAt();
+  }
+  return total;
+}
+
+
+```
+Char From ASCII Value exercise
+
+```javascript
+
+function getChar(a){
+  // ...
+  return  String.fromCharCode(a);
+}
+
+
+```
+
+Binary Addition exercise
+
+```javascript
+
+function addBinary(a, b) {
+  return (a + b).toString(2);
+}
+
+
+
+```
+
+Student's Final Grade exercise
+```javascript
+
+function finalGrade(exam, projects) {
+  if (exam > 90 || projects > 10) return 100;
+  if (exam > 75 && projects >= 5) return 90;
+  if (exam > 50 && projects >= 2) return 75;
+  return 0;
+}
+
+
+```
 
 
 
