@@ -451,6 +451,50 @@ function finalGrade(exam, projects) {
 
 ```
 
+# Thursday  28 of July of 2022
+<br>
+
+# 1.Remove All Exclamation Marks From The End Of Sentence exercise<br>
+<br>
+
+```javascript
+
+function remove(string) {
+  return string.replace(/!+$/, '');
+}
+
+```
+
+
+
+# 2.Vowel Remover exercise <br>
+<br>
+
+
+
+
+
+
+# 3.Rock Paper Scissors! exercise<br>
+<br>
+
+
+
+
+
+
+# 4.Persistent Bugger exercise
+<br>
+
+
+
+
+
+
+
+
+
+
 
 
 
