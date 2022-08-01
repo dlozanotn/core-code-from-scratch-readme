@@ -470,15 +470,32 @@ function remove(string) {
 # 2.Vowel Remover exercise <br>
 <br>
 
+```javascript
+
+function shortcut(string) {
+  return string.replace(/[aeiou]/g, '');
+}
 
 
-
+```
 
 
 # 3.Rock Paper Scissors! exercise<br>
 <br>
 
+```javascript
 
+const rps = (p1, p2) => {
+  let rules = { rock: 'scissors', paper: 'rock', scissors: 'paper' };
+  if (p1 === p2) return 'Draw!';
+  if (p2 === rules[p1]) {
+    return 'Player 1 won!';
+  }
+  return 'Player 2 won!';
+};
+
+
+```
 
 
 
@@ -486,7 +503,24 @@ function remove(string) {
 # 4.Persistent Bugger exercise
 <br>
 
+```javascript
 
+function persistence(num) {
+  let times = 0;
+  num = num.toString();
+  while (num.length > 1) {
+    times++;
+    num = num
+      .split('')
+      .map((a) => Number(a))
+      .reduce((a, b) => a * b)
+      .toString();
+  }
+  return times;
+}
+
+
+```
 
 
 
