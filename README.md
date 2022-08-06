@@ -517,17 +517,70 @@ function persistence(num) {
       .toString();
   }
   return times;
-}
+};
 
 
 ```
 
+# Monday   02 of Agust of 2022
+<br>
+
+# 1.Who likes it ?<br>
+<br>
+
+```javascript
+
+function likes(names) {
+  if(Array.isArray(names)){
+   
+   return names.length > 3 ? names.slice(0,2).join(', ') + ' and ' + (names.length - 2) +' others like this'
+        : names.length === 3 ? names.slice(0,2).join(', ') + ' and ' + names[2] + ' like this'
+        : names.length === 2 ? names.join(' and ') + ' like this'
+        : names.length === 1 ? names[0] + ' likes this' : 'no one likes this'
+  } else {
+    throw 'params must be a array.'
+  }
+}
+```
+
+# 2.Bit Counting exercise<br>
+<br>
+
+```javascript
+
+var countBits = function(n) {
+   // make an array with the bit result
+   const base = (n).toString(2).split('');
+   
+   // make a sum with the array and make the index a Number
+   const result = base.reduce((sum, num) => sum + Number(num), 0);
+   
+   return result;
+};
+
+```
+
+# 3.Your Order, Please exercise<br>
+<br>
+
+```javascript
+
+function order(words){
+  let arr = words.split(' ')
+  let r = []
+
+  arr.forEach(word=>{
+    let x = word.split('')
+    let num = x.find(el=>parseInt(el))
+    r.push([word,parseInt(num)]) 
+  })
+
+  r.sort((a,b)=>a[1]-b[1]).map(x=> x.splice(1,1))
+  return r.join(' ')
+}
 
 
-
-
-
-
+```
 
 
 
