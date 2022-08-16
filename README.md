@@ -522,7 +522,7 @@ function persistence(num) {
 
 ```
 
-# Monday   02 of Agust of 2022
+# Monday   01 of Agust of 2022
 <br>
 
 # 1.Who likes it ?<br>
@@ -581,6 +581,318 @@ function order(words){
 
 
 ```
+
+#  *Martes 02-08-22*
+
+## *1. Ejercicio - simple de latín de cerdo*
+<br>
+
+- **Descripción:** Mueva la primera letra de cada palabra al final de la misma, luego agregue "ay" al final de la palabra. Deje los signos de puntuación intactos.
+
+- **Ejemplo:**
+  - pigIt('Pig latin is cool'); // igPay atinlay siay oolcay
+  - pigIt('Hello world !');     // elloHay orldway !
+
+- **Solución:**
+```javascript
+function pigIt(str){
+  return str.replace(/(\w)(\w*)(\s|$)/g, '$2$1ay$3');
+}
+```
+
+
+## *2. Ejercicio - conteo de duplicados*
+
+- **Descripción:** Escriba una función que devuelva el recuento de caracteres alfabéticos y dígitos numéricos distintos que no distinguen entre mayúsculas y minúsculas que aparecen más de una vez en la cadena de entrada. Se puede suponer que la cadena de entrada contiene solo letras (tanto mayúsculas como minúsculas) y dígitos numéricos.
+
+- **Ejemplo:**
+
+  - "abcde" -> 0 # no characters repeats more than once
+  - "aabbcde" -> 2 # 'a' and 'b'
+  - "aabBcde" -> 2 # 'a' occurs twice and 'b' twice (`b` and `B`)
+  - "indivisibility" -> 1 # 'i' occurs six times
+  - "Indivisibilities" -> 2 # 'i' occurs seven times and 's' occurs twice
+  - "aA11" -> 2 # 'a' and '1'
+  - "ABBA" -> 2 # 'A' and 'B' each occur twice
+
+- **Solución:**
+```javascript
+function duplicateCount(text) {
+  return text
+    .toLowerCase()
+    .split('')
+    .filter((char, i, arr) => {
+      return arr.indexOf(char) !== i && arr.lastIndexOf(char) === i;
+    }).length;
+}
+```
+
+## *3. Ejercicio - decodificar el código Morse*
+
+- **Descripción:** En este kata tienes que escribir un decodificador de código Morse simple. Si bien el código Morse ahora es reemplazado en su mayoría por los canales de comunicación de voz y datos digitales, todavía se usa en algunas aplicaciones en todo el mundo. El código Morse codifica cada carácter como una secuencia de "puntos" y "guiones". Por ejemplo, la letra A se codifica como ·−, la letra Q se codifica como −−·− y el dígito 1 se codifica como ·−−−−. El código Morse no distingue entre mayúsculas y minúsculas, tradicionalmente se utilizan letras mayúsculas. Cuando el mensaje está escrito en código Morse, se utiliza un solo espacio para separar los códigos de caracteres y 3 espacios para separar palabras. Por ejemplo, el mensaje HEY JUDE en código Morse es ···· · −·−−   ·−−− ··− −·· ·.
+- NOTA: Los espacios adicionales antes o después del código no tienen significado y deben ignorarse.
+ Además de letras, dígitos y algunos signos de puntuación, hay algunos códigos de servicio especiales, el más notorio de ellos es la señal de socorro internacional SOS (que fue emitida por primera vez por Titanic), que está codificada como ···−−−···. Estos códigos especiales se tratan como caracteres especiales únicos y, por lo general, se transmiten como palabras separadas Su tarea es implementar una función que tome el código morse como entrada y devuelva una cadena descifrada legible por humanos.
+
+- **Ejemplo:**
+
+  - decodeMorse('.... . -.--   .--- ..- -.. .')
+//should return "HEY JUDE"
+
+- **Solución:**
+```javascript
+decodeMorse = function (morseCode) {
+  return morseCode
+    .split(' ')
+    .map((word) => MORSE_CODE[word] || ' ')
+    .join('')
+    .replace(/  /g, ' ')
+    .trim();
+};
+```
+# *Miércoles 03-08-22*
+
+## *1. Ejercicio - Parentesis válidos*
+
+- **Descripción:** Escribe una función que tome una cadena de paréntesis y determine si el orden de los paréntesis es válido. La función debe devolver verdadero si la cadena es válida y falso si no es válida.
+
+- **Ejemplo:**
+  - "()"              =>  true
+  - ")(()))"          =>  false
+  - "("               =>  false
+  - "(())((()())())"  =>  true
+
+- Restricciones 
+  - 0 <= entrada.longitud <= 100
+
+- **Solución:**
+```javascript
+function validParentheses(parens) {
+  let valid = 0;
+  for (let i = 0; i < parens.length; i++) {
+    if (parens[i] === ')') valid--;
+    if (parens[i] === '(') valid++;
+    if (valid < 0) return false;
+  }
+  return valid == 0;
+}
+```
+
+
+## *2. Ejercicio - Convertir cadena en caso de camello*
+
+- **Descripción:** Complete el método/función para que convierta las palabras delimitadas por guiones/guiones bajos en mayúsculas y minúsculas. La primera palabra dentro de la salida debe estar en mayúsculas solo si la palabra original estaba en mayúsculas (conocido como Upper Camel Case, también conocido como caso Pascal).
+
+- **Ejemplo:**
+  - "the-stealth-warrior" gets converted to "theStealthWarrior"
+  - "The_Stealth_Warrior" gets converted to "TheStealthWarrior"
+
+- **Solución:**
+
+```javascript
+function toCamelCase(str){
+  let resultado = '';
+  let pos = str.length;
+  for(let i = 0; i < pos; i++){
+    if(i != 0 && (str[i - 1] === '_' || str[i - 1] === '-')) {
+      resultado += str[i].toUpperCase();
+    } else if (str[i] != '-' && str[i] != '_') {
+      resultado += str[i];
+    }
+  }
+  return resultado;
+}
+```
+
+
+## *3. Ejercicio - único en orden*
+
+- **Descripción:** Implemente la función unique_in_order que toma como argumento una secuencia y devuelve una lista de elementos sin ningún elemento con el mismo valor uno al lado del otro y conservando el orden original de los elementos.
+
+- **Ejemplo:**
+  - uniqueInOrder('AAAABBBCCDAABBB') == ['A', 'B', 'C', 'D', 'A', 'B']
+  - uniqueInOrder('ABBCcAD')         == ['A', 'B', 'C', 'c', 'A', 'D']
+  - uniqueInOrder([1,2,2,3,3])       == [1,2,3]
+
+- **Solución:**
+```javascript
+function uniqueInOrder(iterable) {
+  let result = [];
+  let last;
+  for (let i = 0; i < iterable.length; i++) {
+    if (iterable[i] !== last) {
+      last = iterable[i];
+      result.push(last);
+    }
+  }
+  return result;
+}
+```
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+
+#  *Jueves 04-08-22*
+
+## *1. Ejercicio - Plegar una matriz*
+
+- **Descripción:** En este kata, debe escribir un método que doble una matriz determinada de números enteros por el medio x veces.
+
+- **Ejemplo:**
+  - Fold 1-times:
+  - [1,2,3,4,5] -> [6,6,3]
+
+  - A little visualization (NOT for the algorithm but for the idea of folding):
+
+  - Step 1         Step 2        Step 3       Step 4       Step5
+  -                    5/           5|         5\          
+  -                   4/            4|          4\      
+  -                   1 2 3 4 5      1 2 3/         1 2 3|       1 2 3\       6 6 3
+  -                   ----*----      ----*          ----*        ----*        ----*
+
+
+  - Fold 2-times:
+  - [1,2,3,4,5] -> [9,6]
+  
+- **Solución:**
+
+```javascript
+function foldArray(a, n) {
+  const r = [],
+    c = a.slice();
+  while (c.length) r.push(c.pop() + (c.shift() || 0));
+  return n - 1 ? foldArray(r, n - 1) : r;
+}
+```
+
+## *2. Ejercicio - Cifrar esto!*
+
+- **Descripción:** ¡Cifra esto! ¡Quieres crear mensajes secretos que puedan ser descifrados por Descifrar esto! kata. Aquí están las condiciones: 
+- Su mensaje es una cadena que contiene palabras separadas por espacios. 
+- Debe encriptar cada palabra en el mensaje usando las siguientes reglas: 
+  - La primera letra debe convertirse a su código ASCII. 
+  - La segunda letra debe ser intercambiada con la última letra 
+- Manteniéndolo simple: no hay caracteres especiales en la entrada.
+
+- **Ejemplo:**
+  - encryptThis("Hello") === "72olle"
+  - encryptThis("good") === "103doo"
+  - encryptThis("hello world") === "104olle 119drlo"
+
+- **Solución:**
+
+```javascript
+function encryptedWord(word) {
+  if (word.length == 1) return word.charCodeAt();
+  if (word.length == 2) return `${word.charCodeAt(0)}${word[1]}`;
+  return `${word.charCodeAt(0)}${word[word.length - 1]}${word.slice(
+    2,
+    word.length - 1
+  )}${word[1]}`;
+}
+var encryptThis = function (text) {
+  return text.split(' ').map(encryptedWord).join(' ');
+};
+```
+
+## *3. Completar el 1er Core Challenge*
+
+- Completado
+  - Me llamo David Lozano, soy de México, y soy un amante del diseño, la web, la tecnologia, animes, videojuegos, peliculas, en resumen un geek,  Soy diseñor web, en la parte del Frontend, y y queiro completar mi camino con javascript y react, y ser full stack, para crear aplicaciones que sorprendan. soy una persona curiosa, y quesiempre le gusta aprender algo nuevo cada día, soy autodidacta y apasionado.
+
+
+# *Lunes 08-08-22*
+
+## *1. Ejercicio - Es hora de ponerse al día ⏱️ o hacer trabajo extra ⭐*
+
+- Completado
+
+
+## *2. Ejercicio - Más información sobre bucle for*
+
+- Completado
+
+## *3. Ejercicio - Siga este video de filtro de matriz de JavaScript*
+
+- Video --> [Javascript Array Filter](https://www.youtube.com/watch?v=4_iT6EGkQfk)
+
+- Completado
+
+## *4. Ejercicio - Siga este video JavaScript Array Reduce*
+
+- Video --> [Javascript Array Reduce](https://www.youtube.com/watch?v=g1C40tDP0Bk)
+
+- Completado
+
+## *5. Ejercicio - Siga este video de JavaScript Array Map*
+
+- Video --> [Javascript Array Map](https://www.youtube.com/watch?v=G3BS3sh3D8Q)
+
+- Completado
+
+#  *Martes 09-08-22*
+
+## *1. Ejercicio - Es hora de ponerse al día ⏱️ o hacer trabajo extra ⭐*
+
+- Completado
+
+## *2. Ejercicio - Mire este video de expresiones regulares (RegEx)*
+
+- Video --> [Expresiones Regulares](https://www.youtube.com/watch?v=sXQxhojSdZM)
+
+- Completado
+
+## *3. Ejercicio - Leer expresiones regulares - documentación de MDN*
+
+- Documentación --> [Expresiones Regulares MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions)
+
+- Completado
+
+## *4. Ejercicio - Aprende sobre Replace() en este video*
+
+- Video --> [Método Replace()](https://www.youtube.com/watch?v=ZYPqPoijCAQ&t=176s)
+
+- Completado
+
+## *5. Ejercicio - Leer Replace() - documentación de MDN*
+
+- Documentación --> [Método Replace() MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
+
+- Completado
+
+## *6. Ejercicio - Compruebe Regexr, una herramienta para probar sus expresiones regulares*
+
+- Herramienta --> [Regexr](https://regexr.com/)
+
+- Completado
+
+## *7. Ejercicio - Un video completo de Expresiones Regulares*
+
+- Video --> [Expresiones regulares Completo](https://www.youtube.com/watch?v=rhzKDrUiJVk)
+
+- Completado
+
+# *Miércoles 10-08-22*
+
+## *1. Ejercicio - Es hora de ponerse al día ⏱️ o hacer trabajo extra ⭐ *
+
+- Completado
+
+#  *Jueves 11-08-22*
+
+## *1. Ejercicio - ✨Completa tu 2do Core Challenge. Este es uno de los requisitos para la certificación, donde impulsará su marca profesional de desarrollo. *
+
+- Completado
+  - Perfil de linkedin --> [David Lozano Tenorio](https://www.linkedin.com/in/dlozanotn/)
+
+
+#  *Lunes  15-08-22*
+
+## *1. Ejercicio - Es hora de ponerse al día ⏱️ o hacer trabajo extra ⭐*
+
+- Completado
+
 
 
 
